@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Prueba</title>
+	</head>
+	<body>
+		<br>
+		<div id="contenedor" style="height: 200px; width: 300px">
+			<div id="divMov" style="background-color: blue; width: 100px; height: 100px; position: absolute; border-radius: 50px"></div>
+		</div>
+		<script>
+			var mousePosition;
+			var offset = [0,0];
+			var isDown = false;
+			var objectDiv = document.getElementById("divMov");
+			var contenedor = document.getElementById("contenedor");
+			
+			objectDiv.addEventListener('mousedown',function(e) {
+				isDown = true;
+				offset = [
+					objectDiv.offsetLeft - e.clientX,
+					//objectDiv.offsetTop - e.clientY
+				];
+			}, true);
+			
+			document.addEventListener('mouseup',function() {
+				isDown = false;
+			}, true);
+			
+			document.addEventListener('mousemove', function(e) {
+				e.preventDefault();
+				if (isDown) {
+					mousePosition = {
+						x: e.clientX,
+						y: e.clientY
+					};
+					var point = mousePosition.x + offset[0];
+					if (point < contenedor.offsetLeft) {
+						point = contenedor.offsetLeft;
+					}
+					if (point > (contenedor.offsetLeft + contenedor.offsetWidth - objectDiv.offsetWidth)) {
+						point = (contenedor.offsetLeft + contenedor.offsetWidth - objectDiv.offsetWidth);
+					}
+					objectDiv.style.left = point + 'px';
+					//objectDiv.style.top = (mousePosition.y + offset[1]) + 'px';
+				}
+			}, true);
+		</script>
+	</body>
+</html>

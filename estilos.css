@@ -1,0 +1,134 @@
+html {
+	background: url("fondo.jpg");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+}
+
+.titulo {
+	width: 100%;
+	text-align: center;
+	font-family: 'Sedgwick Ave Display', cursive;
+	font-size: 50px;
+}
+
+.titulo p {
+	margin: 5px 0 5px 0;
+}
+
+.titulo h1 {
+	vertical-align: middle;
+	padding-top: 200px;
+}
+
+nav {
+	width: 150px;
+	background-color: #000033; 
+	border-radius: 0 5px 5px 0;
+}
+
+nav ul {
+	padding: 0;
+}
+
+nav li {
+	list-style: none;
+}
+
+nav a {
+	padding: 1.4045em 1.618em;
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #000080;
+}
+
+.select {
+	background-color: #000060;
+}
+
+.divNav {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #00004d;
+	font-family: 'Passion One', cursive;
+}
+
+.footer-menu {
+	display: block;
+	font-family: 'Lato', sans-serif;
+	font-size: 11px;
+	color: white;
+	padding: 0 5px 15px 5px;
+	position: absolute;
+	bottom: 0;
+}
+
+.footer-menu * {
+	display: block;
+}
+
+.arrow {
+	position: absolute;
+	right: 15px;
+	top: 20px;
+	cursor: pointer;
+	visibility: hidden;
+	animation: 5s arrowNext;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+.arrow img {
+	width: 100px;
+	height: 75px;
+}
+
+@keyframes arrowNext {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.teoria {
+	margin: 25px 150px 0 175px;
+}
+
+.ejem-particula {
+	background-color: blue; 
+	width: 100px; 
+	height: 100px; 
+	position: absolute; 
+	border-radius: 50px;
+}
+
+.ejem-contenedor {
+	padding-top: 100px;
+	width: 100%;
+}
+
+.ejem-texto {
+	padding-top: 150px;
+	width: 500px;
+}
+
+.numberbox {
+	width: 50px;
+}
