@@ -112,11 +112,24 @@ nav a:hover {
 }
 
 .ejem-particula {
-	background-color: blue; 
 	width: 100px; 
 	height: 100px; 
 	position: absolute; 
 	border-radius: 50px;
+}
+
+.ejem-mov {
+	background-color: #0000b3;
+	cursor: pointer;
+}
+
+.ejem-mov-p {
+	background-color: #6666ff;
+	cursor: pointer;
+}
+
+.ejem-stat {
+	background-color: #0000cc;
 }
 
 .ejem-contenedor {
@@ -125,10 +138,71 @@ nav a:hover {
 }
 
 .ejem-texto {
-	padding-top: 150px;
-	width: 500px;
+	margin: 150px 0 0 100px;
+	color: #1a0d00;
+	width: 600px;
+}
+
+.burbuja {
+	padding: 15px;
+	border-radius: 5px;
+	font-family: 'Lato', sans-serif;
+	background-color: #85a3e0;
+	color: #1a0d00;
+}
+
+.burbuja p {
+	margin: 0 0 10px 0;
+}
+
+.img-exp {
+	width: 484px;
+	height: 100px;
 }
 
 .numberbox {
 	width: 50px;
+}
+
+.img-content {
+	width: 100%;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.img-content img {
+	margin: auto;
+}
+
+.pregunta {
+	margin: 0 100px;
+	min-height: 50px;
+	vertical-align: middle;
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.respuesta {
+	margin: 0 110px;
+	background-color: #2a52a2;
+	cursor: pointer;
+}
+
+.respuesta:hover {
+	background-color: #3466cb;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.ajuste {
+	padding-bottom: 60px;
 }
