@@ -2,6 +2,7 @@
 var localpath = window.location.pathname.split("/");
 var nameDoc = localpath[localpath.length -1];
 var selectPage = null;
+var isContest = true;
 if (nameDoc == "presentacion.html") {
 	selectPage = document.getElementById("presentacion");
 } else if (nameDoc == "teoria.html") {
@@ -89,4 +90,18 @@ function muestraEjemplo() {
 	part1.addEventListener('keyup', function(e) {
 		funClik(e);
 	}, true);
+}
+
+function show(elemento, isSound) {
+	if (isContest) {
+		if (isSound) {
+			document.getElementById('correcto').play();
+		} else {
+			document.getElementById('incorrecto').play();
+		}
+		isContest = false;
+		var respuesta = document.getElementById(elemento);
+		respuesta.style.display = 'block';
+		document.getElementById('arrow').style.display = 'block';
+	}
 }

@@ -9,19 +9,22 @@
 		<div class="teoria ajuste">
 			<span>
 				<div class="burbuja pregunta">
-					¿Que pregunta puedo poner aqui?
+					La ley de Coulomb, es sobre objetos...
 				</div>
 				<br><br>
-				<div class="burbuja respuesta">
-					respuesta 1
+				<div class="burbuja respuesta" onclick="show('calif1', false)">
+					<img id="calif1" src="cross.svg" class="califica">
+					objetos pesados
 				</div>
 				<br>
-				<div class="burbuja respuesta">
-					respuesta 2
+				<div class="burbuja respuesta" onclick="show('calif2', true)">
+					<img id="calif2" src="check.svg" class="califica">
+					objetos cargados
 				</div>
 				<br>
-				<div class="burbuja respuesta">
-					respuesta 3
+				<div class="burbuja respuesta" onclick="show('calif3', false)">
+					<img id="calif3" src="cross.svg" class="califica">
+					objetos marcados
 				</div>
 			</span>
 		</div>
@@ -32,7 +35,7 @@
 					<li class=""><a id="teoria" href="teoria.html" class="">2. Teoria</a></li>
 					<li class=""><a id="ejemplo" href="ejemplo.html" class="">3. Ejemplo</a></li>
 					<li class=""><a id="explicacion" href="explicacion.html" class="">4. Explicación</a></li>
-					<li class=""><a id="preguntas" href="preguntas.html" class="">5. Preguntas</a></li>
+					<li class=""><a id="preguntas" href="pregunta1.html" class="">5. Preguntas</a></li>
 				</ul>
 			</nav>
 			<div class="footer-menu">
@@ -41,6 +44,9 @@
 				<spawn>0900-020 Fisica II</spawn>
 			</div>
 		</div>
+		<a id="arrow" class="arrow arrow-p" href="pregunta2.html"><img src="arrow.png"></a>
 		<script type="text/javascript" src="script.js"></script>
+		<audio id="correcto" src="correcto.mp3">
+		<audio id="incorrecto" src="incorrecto.mp3">
 	</body>
 </html>

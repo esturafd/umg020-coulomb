@@ -5,34 +5,28 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Passion+One|Sedgwick+Ave+Display" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="estilos.css">
 	</head>
-	<body>
-		<div class="teoria">
-			<div class="burbuja">
-				<p>Tomamos como experimento inicial las dos cargas a 1 x10^-6 Coulombs y una distancia de 2 metros.</p>
-				<div class="img-content">
-					<img src="exp-base.jpg" class="img-exp">
+	<body class="center">
+		<div class="teoria ajuste">
+			<span>
+				<div class="burbuja pregunta">
+					La frase deribada de la ley de Coulomb seria, Signos diferentes...
 				</div>
-			</div>
-			<br>
-			<div class="burbuja">
-				<p>Si elevamos el valor de cualquiera de las particulas, vemos que el valor de la fuerza crece, por lo que podemos
-				decir que la magnitud de las carga es proporcional a la fuerza.</p>
-				<div class="img-content">
-					<img src="exp-carga.jpg" class="img-exp">
+				<br><br>
+				<div class="burbuja respuesta" onclick="show('calif1', false)">
+					<img id="calif1" src="cross.svg" class="califica">
+					se detestan
 				</div>
-			</div>
-			<br>
-			<div class="burbuja">
-				<p>Pero si elevamos la distancia a por ejemplo 4 metros, vemos que la fuerza disminuye, por lo que tambien podemos 
-				decir que la distancia es inversamente proporcional a la fuerza.</p>
-				<div class="img-content">
-					<img src="exp-distancia.jpg" class="img-exp">
+				<br>
+				<div class="burbuja respuesta" onclick="show('calif2', true)">
+					<img id="calif2" src="check.svg" class="califica">
+					se atraen
 				</div>
-			</div>
-			<br>
-			<div class="burbuja">
-				Puedes hacer nuevamente la prueba, regresando al punto #3.
-			</div>
+				<br>
+				<div class="burbuja respuesta" onclick="show('calif3', false)">
+					<img id="calif3" src="cross.svg" class="califica">
+					se repelan
+				</div>
+			</span>
 		</div>
 		<div class="divNav">
 			<nav class="">
@@ -50,7 +44,9 @@
 				<spawn>0900-020 Fisica II</spawn>
 			</div>
 		</div>
-		<a class="arrow" href="pregunta1.html"><img src="arrow.png"></a>
+		<a id="arrow" class="arrow arrow-p" href="gracias.html"><img src="arrow.png"></a>
 		<script type="text/javascript" src="script.js"></script>
+		<audio id="correcto" src="correcto.mp3">
+		<audio id="incorrecto" src="incorrecto.mp3">
 	</body>
 </html>

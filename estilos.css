@@ -97,6 +97,10 @@ nav a:hover {
 	height: 75px;
 }
 
+.arrow-p {
+	display: none;
+}
+
 @keyframes arrowNext {
 	0% {
 		opacity: 0;
@@ -190,6 +194,7 @@ nav a:hover {
 	margin: 0 110px;
 	background-color: #2a52a2;
 	cursor: pointer;
+	position: relative;
 }
 
 .respuesta:hover {
@@ -205,4 +210,13 @@ nav a:hover {
 
 .ajuste {
 	padding-bottom: 60px;
+}
+
+.califica {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	left: -50px;
+	display: none;
 }
