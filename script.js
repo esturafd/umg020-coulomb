@@ -28,6 +28,7 @@ function muestraEjemplo() {
 	var resultado = document.getElementById("resultado");
 	var part1 = document.getElementById("carga1");
 	var part2 = document.getElementById("carga2");
+	var tipoFuerza = document.getElementById("tip-fuerza");
 	var valDistancia = 0;
 
 	var partInterval = window.setInterval(function() {
@@ -54,6 +55,12 @@ function muestraEjemplo() {
 			resultado.innerHTML = "N/A";
 		} else {
 			var foo = (9*10**9)*(part1.value*10**-6)*(part2.value*10**-6)/(valDistancia**2);
+			if (foo < 0) {
+				foo = foo*(-1);
+				tipoFuerza.innerHTML = 'ATRACCION';
+			} else {
+				tipoFuerza.innerHTML = 'REPULSION';
+			}
 			resultado.innerHTML = foo.toExponential(4) + ' N';
 		}
 	} 
