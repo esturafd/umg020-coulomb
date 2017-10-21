@@ -94,7 +94,7 @@ function muestraEjemplo() {
 		funClik(e);
 	}, true);
 
-	part1.addEventListener('keyup', function(e) {
+	part2.addEventListener('keyup', function(e) {
 		funClik(e);
 	}, true);
 }
